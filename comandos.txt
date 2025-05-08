@@ -1,0 +1,19 @@
+Tallys Cesar Gurgel Batista
+
+git clone https://gitlab.com/mizael.cortez/curso-branchs-ifrn-ead
+z curso-branchs-ifrn-ead
+touch texto.txt
+echo A filosofia do Linux é ‘Ria na face do perigo’. >> texto.txt
+git add .
+git commit -m "create the text file"
+git checkout -b feature-1
+git add .
+git commit -m "complete the sentence"
+git checkout main
+git commit -am "insert credits to the author"
+git merge feature-1
+git commit -am "resolves conflict"
+git checkout -b add-comandos
+touch comandos.txt
+
+
